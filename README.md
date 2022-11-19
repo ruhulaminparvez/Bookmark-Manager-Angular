@@ -4,4 +4,4 @@ This is a web application that stores web bookmarks. The user can add, delete an
 
 
 ## Live Preview Link
-[Bookmark Manager]()
+[Bookmark Manager](https://bookmark-manage.netlify.app/)
