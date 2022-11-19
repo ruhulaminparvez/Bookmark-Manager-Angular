@@ -1,0 +1,49 @@
+table {
+  width: 100%;
+}
+
+
+.bookmark-content {
+  // width: 95%;
+  height: 65%;
+  margin: 2% 2%;
+  border: 1px solid gray;
+  align-items: center;
+}
+
+.group-list-item {
+  &:hover {
+    cursor: pointer;
+    background: rgb(245,245,245);
+  }
+}
+
+.group-list-item-icon {
+  border: 1px solid lightgray;
+  color: darkgoldenrod;
+}
+
+
+#group-button{
+  width: 100%;
+}
+
+.custom-spacer {
+  flex: 1 1 auto;
+}
+
+.group-indicator-btn, .notification{
+  text-align: center;
+}
+
+.desktop-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create-bookmark-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
