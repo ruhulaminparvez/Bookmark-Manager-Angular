@@ -35,8 +35,10 @@ export class DialogCreateBookmarkComponent {
     bookmarkData.name = this.name;
     bookmarkData.url = this.url;
     bookmarkData.group = this.group;
-    // store bookmark data in the local storage
-    localStorage.setItem('bookmarkData', JSON.stringify(bookmarkData));
+    // store all the bookmark data in the local storage as array of objects
+    const bookmarkDataArray = JSON.parse(localStorage.getItem('bookmarkDataArray')) || [];
+    bookmarkDataArray.push(bookmarkData);
+    localStorage.setItem('bookmarkDataArray', JSON.stringify(bookmarkDataArray));
     this.dialogRef.close(bookmarkData);
   }
 
