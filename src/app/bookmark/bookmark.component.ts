@@ -35,8 +35,8 @@ export class BookmarkComponent implements OnInit, OnDestroy {
   constructor(private store: Store<AppState>, public dialog: MatDialog, private matIconRegistry: MatIconRegistry,
               private domSanitizer: DomSanitizer, private snackBar: MatSnackBar) {
     matIconRegistry.addSvgIcon(
-      `avaloq-logo`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/avaloq-logo.svg')
+      `logo`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/favicon/favicon.ico')
     );
    }
 

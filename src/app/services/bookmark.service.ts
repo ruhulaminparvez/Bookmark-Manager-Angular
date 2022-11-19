@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 @Injectable({providedIn: 'root'})
 export class BookmarkService {
 
-  private REST_API_SERVER = 'http://localhost:8900/api/bookmarks/';
+  private FAKE_API_SERVER = 'http://localhost:5000/api/bookmarks/';
 
   constructor(private httpClient: HttpClient) {}
 
@@ -30,11 +30,11 @@ export class BookmarkService {
   }
 
   getBookmarks(): Observable<Bookmark[]>{
-    return this.httpClient.get<Bookmark[]>(this.REST_API_SERVER);
+    return this.httpClient.get<Bookmark[]>(this.FAKE_API_SERVER);
   }
 
   deleteBookmarks(id: string): Observable<boolean>{
-    return this.httpClient.delete<boolean>(this.REST_API_SERVER + id);
+    return this.httpClient.delete<boolean>(this.FAKE_API_SERVER + id);
   }
 
 }
